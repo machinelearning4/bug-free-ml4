@@ -41,7 +41,7 @@ movie_index = get_index_from_title(movie_user_likes)
 
 similar_movies =  list(enumerate(cosine_sim[movie_index]))
 
-## Step 7: Get a list of similar movies in descending order of similarity score
+##Get a list of similar movies in descending order of similarity score
 sorted_similar_movies = sorted(similar_movies,key=lambda x:x[1],reverse=True)
 
 ##Print titles of first 50 movies
